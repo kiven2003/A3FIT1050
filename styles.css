@@ -164,53 +164,54 @@ footer {
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     #cs-footer-108 {
-        /* 40px - 100px top and bottom */
         padding: clamp(2.5rem, 7.9vw, 6.25rem) 1rem;
-        /* 40px - 50px */
         padding-bottom: clamp(2.5rem, 7.9vw, 3.125rem);
         overflow-x: hidden;
+        box-sizing: border-box; 
     }
     #cs-footer-108 .cs-container {
         width: 100%;
-        max-width: 100%;
+        max-width: 100%; 
         margin: auto;
-        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        box-sizing: border-box; 
     }
     #cs-footer-108 .cs-ul {
-        /* 40px - 60px*/
         padding: 0 0 clamp(2.5rem, 4.7vw, 3.75rem);
         margin: auto;
         border-bottom: 1px solid #eff0f6;
+        display: flex;
         flex-direction: column;
-        align-items: center;
-        box-sizing: border-box;
+        align-items: center; 
+        box-sizing: border-box; 
+        width: 100%; 
     }
     #cs-footer-108 .cs-li {
         list-style: none;
         text-align: center;
         margin-bottom: 1.25rem;
-        max-width: 100%;
-        box-sizing: border-box;
+        max-width: 100%; 
+        box-sizing: border-box; 
     }
     #cs-footer-108 .cs-li:last-of-type {
         margin-bottom: 0;
     }
     #cs-footer-108 .cs-link {
-        /* 16px - 20px */
         font-size: clamp(1rem, 1.55vw, 1.25rem);
         line-height: 1.5em;
         text-decoration: none;
         font-weight: 700;
         color: var(--bodyTextColor);
         position: relative;
-        max-width: 100%;
-        box-sizing: border-box;
+        max-width: 100%; 
+        box-sizing: border-box; 
     }
     #cs-footer-108 .cs-link:hover:before {
         width: 100%;
     }
     #cs-footer-108 .cs-link:before {
-        /* top right box */
         content: "";
         width: 0%;
         height: 0.1875rem;
@@ -223,7 +224,6 @@ footer {
         transition: width 0.3s;
     }
     #cs-footer-108 .cs-copyright {
-        /* 14px - 16px */
         font-size: clamp(0.875rem, 1.6vw, 1rem);
         text-align: center;
         color: #a0a3bd;
@@ -231,30 +231,75 @@ footer {
         /* 20px - 28px */
         margin: clamp(1.25rem, 2.8vw, 1.75rem) auto 0;
         max-width: 100%;
-        box-sizing: border-box;
+        box-sizing: border-box; 
     }
-    #cs-footer-108 .cs-icon{
-      width: 20px;
-      height: 20px;
-      vertical-align: middle;
-      margin-right: 8px;
+    #cs-footer-108 .cs-icon {
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+        margin-right: 8px;
     }
 }
+
 /* Tablet - 600px */
 @media only screen and (min-width: 37.5rem) {
     #cs-footer-108 .cs-ul {
-        display: flex;
+        flex-direction: row; 
         justify-content: center;
         align-items: center;
+        box-sizing: border-box;
     }
     #cs-footer-108 .cs-li {
-        /* 44px - 88px */
         margin: 0 clamp(2.75rem, 6.2vw, 5.5rem) 0 0;
+        max-width: auto; 
+        box-sizing: border-box;
     }
     #cs-footer-108 .cs-li:last-of-type {
         margin: 0;
     }
 }
+
+/* Desktop - 1024px and above */
+@media only screen and (min-width: 64rem) {
+    #cs-footer-108 {
+        padding: 4rem 2rem;
+        padding-bottom: 2rem;
+        overflow-x: hidden; 
+        box-sizing: border-box; 
+    }
+    #cs-footer-108 .cs-container {
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        box-sizing: border-box;
+    }
+    #cs-footer-108 .cs-ul {
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        border-bottom: none;
+    }
+    #cs-footer-108 .cs-li {
+        margin: 0 2rem;
+        text-align: left;
+    }
+    #cs-footer-108 .cs-link {
+        font-size: 1rem;
+        text-decoration: none;
+        font-weight: 700;
+        color: var(--bodyTextColor);
+    }
+    #cs-footer-108 .cs-copyright {
+        font-size: 1rem;
+        color: #a0a3bd;
+        text-align: center; 
+        margin: 1.5rem auto 0; 
+    }
+}
+
 /*-- -------------------------- -->
 <---     Mobile Navigation      -->
 <--- -------------------------- -*/
