@@ -168,6 +168,7 @@ footer {
         padding: clamp(2.5rem, 7.9vw, 6.25rem) 1rem;
         /* 40px - 50px */
         padding-bottom: clamp(2.5rem, 7.9vw, 3.125rem);
+        overflow-x: hidden;
     }
     #cs-footer-108 .cs-container {
         width: 100%;
