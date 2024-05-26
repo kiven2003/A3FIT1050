@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIT1050 Web Fundamentals - Assignment 3</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <a href="" class="cs-logo" aria-label="back to home">
+                <img src="img/belle&co.jpg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how many there are -->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="#Home" class="cs-li-link cs-active">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="#About" class="cs-li-link">
+                                About
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="#Services" class="cs-li-link">
+                                Services
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="#GiftVouchers" class="cs-li-link">
+                                Gift Vouchers
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="#LocationHours" class="cs-li-link">
+                                Location & Hours
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="#Contact" class="cs-li-link contact-link">
+                                Contact
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="#Booknow" class="cs-li-link book-now">
+                                Book Now
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+    <main>
+        <section id="hero-1785">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <h1 class="cs-title">Belle & Co</h1>
+                    <p class="cs-text">All about beauty and excellent hair service.</p>
+                    <div class="cs-button-group">
+                        <a href="#BookNow" class="cs-button-solid cs-button1">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="https://app.gettimely.com/azure/timely-images/daca57a9-0fd5-481e-95ed-42677acea878.jpg">
+                <source media="(min-width: 601px)" srcset="https://app.gettimely.com/azure/timely-images/daca57a9-0fd5-481e-95ed-42677acea878.jpg">
+                <img loading="lazy" decoding="async" src="https://app.gettimely.com/azure/timely-images/daca57a9-0fd5-481e-95ed-42677acea878.jpg" alt="field" width="1920" height="1200" aria-hidden="true">
+            </picture>
+        </section>
+        <section id="home">
+        </section>
+    </main>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-1498">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title" style="font-weight: bold;">Our Services</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="img/hairfoils.webp"/>
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="img/hairfoils.webp"/>
+                        <img loading="lazy" decoding="async" src="img/hairfoils.webp" alt="foils" width="413" height="240" aria-hidden="true" />
+                    </picture>
+                </div>
+                <div class="cs-info">
+                    <h3 class="cs-h3">Foils</h3>
+                    <span class="cs-ages">(10-100$)</span>
+                    <p class="cs-item-text">
+                        Expert foil highlighting techniques to add dimension and brightness to your hair, creating a customized and natural-looking colour result.
+                    </p>
+                    <a href="" class="cs-link">
+                        More Info
+                        <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/green-arrow.svg" alt="icon" width="20" height="20" aria-hidden="true" />
+                    </a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="img/hairtint.jpg" />
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="img/hairtint.jpg" />
+                        <img loading="lazy" decoding="async" src="img/hairtint.jpg" alt="ladiescut" width="413" height="240" aria-hidden="true" />
+                    </picture>
+                </div>
+                <div class="cs-info">
+                    <h3 class="cs-h3">Tins</h3>
+                    <span class="cs-ages">(10-100$)</span>
+                    <p class="cs-item-text">
+                        Professional hair tinting services to enhance, refresh, or change your hair colour, tailored to your desired shade and style.
+                    </p>
+                    <a href="" class="cs-link">
+                        More Info
+                        <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/green-arrow.svg" alt="icon" width="20" height="20" aria-hidden="true" />
+                    </a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="img/ladiescut.jpg" />
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="img/ladiescut.jpg" />
+                        <img loading="lazy" decoding="async" src="img/ladiescut.jpg" alt="ladiescut" width="413" height="240" aria-hidden="true" />
+                    </picture>
+                </div>
+                <div class="cs-info">
+                    <h3 class="cs-h3">Ladies Cut</h3>
+                    <span class="cs-ages">(10-100$)</span>
+                    <p class="cs-item-text">
+                        Precision haircutting and styling for women to achieve a flattering and contemporary look that complements your features and lifestyle.
+                    </p>
+                    <a href="" class="cs-link">
+                        More Info
+                        <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/green-arrow.svg" alt="icon" width="20" height="20" aria-hidden="true" />
+                    </a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="img/semihair.webp" />
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="img/semihair.webp" />
+                        <img loading="lazy" decoding="async" src="img/semihair.webp" alt="semis" width="413" height="240" aria-hidden="true" />
+                    </picture>
+                </div>
+                <div class="cs-info">
+                    <h3 class="cs-h3">Semis</h3>
+                    <span class="cs-ages">(10-100$)</span>
+                    <p class="cs-item-text">
+                        Semi-permanent hair colouring services to add subtle or vibrant colour tones, providing a temporary change without the commitment of permanent color.
+                    </p>
+                    <a href="" class="cs-link">
+                        More Info
+                        <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/green-arrow.svg" alt="icon" width="20" height="20" aria-hidden="true" />
+                    </a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="img/mencut.jpg" />
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="img/mencut.jpg" />
+                        <img loading="lazy" decoding="async" src="img/mencut.jpg" alt="mencut" width="413" height="240" aria-hidden="true" />
+                    </picture>
+                </div>
+                <div class="cs-info">
+                    <h3 class="cs-h3">Mens Cut</h3>
+                    <span class="cs-ages">(10-100$)</span>
+                    <p class="cs-item-text">
+                        Tailored haircutting and grooming services for men of all ages to achieve a polished look that reflects your personal style or current trendy style.
+                    </p>
+                    <a href="" class="cs-link">
+                        More Info
+                        <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/green-arrow.svg" alt="icon" width="20" height="20" aria-hidden="true" />
+                    </a>
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="img/extraservice.jpg" />
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="img/extraservice.jpg" />
+                        <img loading="lazy" decoding="async" src="img/extraservice.jpg" alt="extraservice" width="413" height="240" aria-hidden="true" />
+                    </picture>
+                </div>
+                <div class="cs-info">
+                    <h3 class="cs-h3">Extra services</h3>
+                    <span class="cs-ages">(10-100$)</span>
+                    <p class="cs-item-text">
+                        Additional pampering services including blowouts, treatments, and more to enhance your salon experience and maintain the health and beauty of your hair.
+                    </p>
+                    <a href="" class="cs-link">
+                        More Info
+                        <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/green-arrow.svg" alt="icon" width="20" height="20" aria-hidden="true" />
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- ============================================ -->
+<!--                Meet The Team                 -->
+<!-- ============================================ -->
+
+<section id="meet-team-1765">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex-wrapper">
+                <div class="cs-flex">
+                    <h2 class="cs-title">Meet The Stylist</h2>
+                </div>
+            </div>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="/img/stylist.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="/img/stylist.jpg">
+                        <img loading="lazy" decoding="async" src="/img/stylist.jpg" alt="person" width="305" height="440">
+                    </picture>
+                    <div class="cs-social">
+                        <a href="" class="cs-link" aria-label="Facebook" target="_blank" rel="noopener">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-grey.svg" alt="facebook" width="20" height="20">
+                        </a>
+                        <a href="" class="cs-link" aria-label="Twitter" target="_blank" rel="noopener">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/x-grey.svg" alt="twitter" width="20" height="20">
+                        </a>
+                        <a href="" class="cs-link" aria-label="Instagram" target="_blank" rel="noopener">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram-grey.svg" alt="instagram" width="20" height="20">
+                        </a>
+                    </div>
+                </div>
+                <div class="cs-info">
+                    <span class="cs-name">Holly</span>
+                    <span class="cs-job">Stylist</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="/img/stylist2.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="/img/stylist2.jpg">
+                        <img loading="lazy" decoding="async" src="/img/stylist2.jpg" alt="person" width="305" height="440">
+                    </picture>
+                    <div class="cs-social">
+                        <a href="" class="cs-link" aria-label="Facebook" target="_blank" rel="noopener">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-grey.svg" alt="facebook" width="20" height="20">
+                        </a>
+                        <a href="" class="cs-link" aria-label="Twitter" target="_blank" rel="noopener">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/x-grey.svg" alt="twitter" width="20" height="20">
+                        </a>
+                        <a href="" class="cs-link" aria-label="Instagram" target="_blank" rel="noopener">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram-grey.svg" alt="instagram" width="20" height="20">
+                        </a>
+                    </div>
+                </div>
+                <div class="cs-info">
+                    <span class="cs-name">Melinda</span>
+                    <span class="cs-job">Stylist</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="/img/stylist3.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="/img/stylist3.jpg">
+                        <img loading="lazy" decoding="async" src="/img/stylist3.jpg" alt="person" width="305" height="440">
+                    </picture>
+                    <div class="cs-social">
+                        <a href="" class="cs-link" aria-label="Facebook" target="_blank" rel="noopener">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-grey.svg" alt="facebook" width="20" height="20">
+                        </a>
+                        <a href="" class="cs-link" aria-label="Twitter" target="_blank" rel="noopener">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/x-grey.svg" alt="twitter" width="20" height="20">
+                        </a>
+                        <a href="" class="cs-link" aria-label="Instagram" target="_blank" rel="noopener">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram-grey.svg" alt="instagram" width="20" height="20">
+                        </a>
+                    </div>
+                </div>
+                <div class="cs-info">
+                    <span class="cs-name">Brittany</span>
+                    <span class="cs-job">Stylist</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="/img/stylist4.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="/img/stylist4.jpg">
+                        <img loading="lazy" decoding="async" src="/img/stylist4.jpg" alt="person" width="305" height="440">
+                    </picture>
+                    <div class="cs-social">
+                        <a href="" class="cs-link" aria-label="Facebook" target="_blank" rel="noopener">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-grey.svg" alt="facebook" width="20" height="20">
+                        </a>
+                        <a href="" class="cs-link" aria-label="Twitter" target="_blank" rel="noopener">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/x-grey.svg" alt="twitter" width="20" height="20">
+                        </a>
+                        <a href="" class="cs-link" aria-label="Instagram" target="_blank" rel="noopener">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram-grey.svg" alt="instagram" width="20" height="20">
+                        </a>
+                    </div>
+                </div>
+                <div class="cs-info">
+                    <span class="cs-name">Vanessa Thalhammer</span>
+                    <span class="cs-job">Stylist</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="/img/stylist5.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="/img/stylist5.jpg">
+                        <img loading="lazy" decoding="async" src="/img/stylist5.jpg" alt="person" width="305" height="440">
+                    </picture>
+                    <div class="cs-social">
+                        <a href="" class="cs-link" aria-label="Facebook" target="_blank" rel="noopener">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-grey.svg" alt="facebook" width="20" height="20">
+                        </a>
+                        <a href="" class="cs-link" aria-label="Twitter" target="_blank" rel="noopener">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/x-grey.svg" alt="twitter" width="20" height="20">
+                        </a>
+                        <a href="" class="cs-link" aria-label="Instagram" target="_blank" rel="noopener">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram-grey.svg" alt="instagram" width="20" height="20">
+                        </a>
+                    </div>
+                </div>
+                <div class="cs-info">
+                    <span class="cs-name">Eliza Bisset</span>
+                    <span class="cs-job">Stylist</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                Contact Form                  -->
+<!-- ============================================ -->
+
+<section id="cs-contact-242">
+  <div class="cs-container">
+      <div class="cs-content">
+          <h2 class="cs-title">Contact Us</h2>
+          <p class="cs-text">
+              enquiry
+          </p>
+      </div>
+      <!-- Form -->
+      <form id="cs-form-242" name="Contact Form" method="post">
+          <label class="cs-label">
+              Name
+              <input class="cs-input" required type="text" id="name-242" name="name" placeholder="Name">
+          </label>
+          <label class="cs-label">
+              Email
+              <input class="cs-input" required type="text" id="email-242" name="email" placeholder="Email">
+          </label>
+          <label class="cs-label">
+              Phone
+              <input class="cs-input" required type="text" id="phone-242" name="phone" placeholder="Phone">
+          </label>
+          <label class="cs-label">
+              How Did You Find Us
+              <input class="cs-input" type="text" id="find-242" name="find-us" placeholder="Social Media or Friends&family?">
+          </label>
+          <label class="cs-label cs-label-message">
+              Message
+              <textarea class="cs-input cs-textarea" required name="Message" id="message-242" placeholder="Message"></textarea>
+          </label>
+          <button class="cs-button-solid cs-submit" type="submit">Submit Message Now</button>
+      </form>
+      <!-- Contact Info -->
+      <div class="cs-right-section">
+          <ul class="cs-ul">
+              <li class="cs-li">
+                  <picture class="cs-icon-wrapper">
+                      <img aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/mail.svg" alt="mail icon" class="cs-icon" width="36" height="36" decoding="async">
+                  </picture>
+                  <div class="cs-flex-group">
+                      <span class="cs-header">Email</span>
+                      <a href="email@bellenco.com" class="cs-link">email@bellenco.com</a>
+                  </div>
+              </li>
+              <li class="cs-li">
+                  <picture class="cs-icon-wrapper">
+                      <img aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/phone.svg" alt="phone icon" class="cs-icon" width="36" height="36" decoding="async">
+                  </picture>
+                  <div class="cs-flex-group">
+                      <span class="cs-header">Phone</span>
+                      <a href="tel:0363330870" class="cs-link">0363330870</a>
+                  </div>
+              </li>
+              <li class="cs-li">
+                  <picture class="cs-icon-wrapper">
+                      <img aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin.svg" alt="address icon" class="cs-icon" width="36" height="36" decoding="async">
+                  </picture>
+                  <div class="cs-flex-group">
+                      <span class="cs-header">Address</span>
+                      <a href="" class="cs-link"><span class="cs-block">42 Wentworth st</span> Newstead TAS 7250</a>
+                  </div>
+              </li>
+          </ul>
+          <!-- Picture -->
+          <picture class="cs-picture">
+              <source media="(max-width: 600px)" srcset="/img/bellencomap.jpg">
+              <source media="(min-width: 601px)" srcset="/img/bellencomap.jpg">
+              <img class="cs-img" aria-hidden="true" loading="lazy" decoding="async" src="/img/bellencomap.jpg" alt="google map" width="462" height="438">
+          </picture>
+      </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    Footer                    -->
+<!-- ============================================ -->
+    <footer id="cs-footer-108">
+        <div class="cs-container">
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <a href="#Instagram" class="cs-link">
+                        <img src="img/instagram.png" alt="Instagram Logo" class="cs-icon">
+                        Instagram
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <a href="#Facebook" class="cs-link">
+                        <img src="img/facebook.png" alt="Facebook Logo" class="cs-icon">
+                        Facebook
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+  <script src="script.js"></script>
+</body>
+</html>
