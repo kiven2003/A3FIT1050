@@ -157,26 +157,21 @@ footer {
         padding-bottom: 14vw;
     }
 }
-/*-- -------------------------- -->
-<---           Footer           -->
-<--- -------------------------- -*/
-
-/* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     #cs-footer-108 {
         padding: clamp(2.5rem, 7.9vw, 6.25rem) 1rem;
         padding-bottom: clamp(2.5rem, 7.9vw, 3.125rem);
         overflow-x: hidden;
-        box-sizing: border-box; 
+        box-sizing: border-box;
     }
     #cs-footer-108 .cs-container {
         width: 100%;
-        max-width: 100%; 
+        max-width: 100%;
         margin: auto;
         display: flex;
         flex-direction: column;
-        align-items: center; 
-        box-sizing: border-box; 
+        align-items: center;
+        box-sizing: border-box;
     }
     #cs-footer-108 .cs-ul {
         padding: 0 0 clamp(2.5rem, 4.7vw, 3.75rem);
@@ -184,16 +179,16 @@ footer {
         border-bottom: 1px solid #eff0f6;
         display: flex;
         flex-direction: column;
-        align-items: center; 
-        box-sizing: border-box; 
-        width: 100%; 
+        align-items: center;
+        box-sizing: border-box;
+        width: 100%;
     }
     #cs-footer-108 .cs-li {
         list-style: none;
         text-align: center;
         margin-bottom: 1.25rem;
-        max-width: 100%; 
-        box-sizing: border-box; 
+        max-width: 100%;
+        box-sizing: border-box;
     }
     #cs-footer-108 .cs-li:last-of-type {
         margin-bottom: 0;
@@ -205,8 +200,8 @@ footer {
         font-weight: 700;
         color: var(--bodyTextColor);
         position: relative;
-        max-width: 100%; 
-        box-sizing: border-box; 
+        max-width: 100%;
+        box-sizing: border-box;
     }
     #cs-footer-108 .cs-link:hover:before {
         width: 100%;
@@ -228,10 +223,9 @@ footer {
         text-align: center;
         color: #a0a3bd;
         display: block;
-        /* 20px - 28px */
         margin: clamp(1.25rem, 2.8vw, 1.75rem) auto 0;
         max-width: 100%;
-        box-sizing: border-box; 
+        box-sizing: border-box;
     }
     #cs-footer-108 .cs-icon {
         width: 20px;
@@ -241,17 +235,16 @@ footer {
     }
 }
 
-/* Tablet - 600px */
 @media only screen and (min-width: 37.5rem) {
     #cs-footer-108 .cs-ul {
-        flex-direction: row; 
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         box-sizing: border-box;
     }
     #cs-footer-108 .cs-li {
         margin: 0 clamp(2.75rem, 6.2vw, 5.5rem) 0 0;
-        max-width: auto; 
+        max-width: auto;
         box-sizing: border-box;
     }
     #cs-footer-108 .cs-li:last-of-type {
@@ -259,24 +252,23 @@ footer {
     }
 }
 
-/* Desktop - 1024px and above */
 @media only screen and (min-width: 64rem) {
     #cs-footer-108 {
         padding: 4rem 2rem;
         padding-bottom: 2rem;
-        overflow-x: hidden; 
-        box-sizing: border-box; 
+        overflow-x: hidden;
+        box-sizing: border-box;
     }
     #cs-footer-108 .cs-container {
         max-width: 80rem;
         margin: auto;
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center;
         box-sizing: border-box;
     }
     #cs-footer-108 .cs-ul {
-        flex-direction: row; 
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         padding: 0;
@@ -295,8 +287,8 @@ footer {
     #cs-footer-108 .cs-copyright {
         font-size: 1rem;
         color: #a0a3bd;
-        text-align: center; 
-        margin: 1.5rem auto 0; 
+        text-align: center;
+        margin: 1.5rem auto 0;
     }
 }
 
